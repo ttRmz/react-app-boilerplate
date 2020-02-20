@@ -1,0 +1,28 @@
+%reset-button-styles {
+  margin: 0;
+  border: none;
+  padding: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+}
+
+%reset-anchor-styles {
+  color: inherit;
+  text-decoration: none;
+}
+
+%reset-input-styles {
+  margin: 0;
+  border: none;
+  min-width: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  outline: none;
+}

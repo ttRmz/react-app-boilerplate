@@ -1,0 +1,18 @@
+.Footer {
+  height: $footer_height;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #222;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.Footer__link {
+  @extend %reset-anchor-styles;
+  text-decoration: underline;
+}

@@ -1,0 +1,45 @@
+%body-reset {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  @extend %body-reset;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  @extend %body-reset;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  @include typography(body);
+  padding-bottom: $footer_height;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+input {
+  font-family: $typography-sans-serif-body;
+}

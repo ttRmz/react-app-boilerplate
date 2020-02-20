@@ -1,0 +1,13 @@
+// main styles
+@import './assets/sass/main.scss';
+
+//layout
+@import './layout/Footer/Footer.scss';
+@import './layout/Navigation/Navigation.scss';
+
+// pages
+@import './pages/Home/Home.scss';
+@import './pages/Dashboard/Dashboard.scss';
+
+//components
+@import './component/index.scss';
