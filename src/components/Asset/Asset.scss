@@ -1,0 +1,16 @@
+.Asset {
+  //set a default size
+  height: 108px;
+  width: 108px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.Asset__image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
