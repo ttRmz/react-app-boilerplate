@@ -9,3 +9,7 @@
     #{$key}: $value;
   }
 }
+
+@mixin z-index($preset: base, $offset: 0) {
+  z-index: map-get-strict($z-index-map, $preset) + $offset;
+}

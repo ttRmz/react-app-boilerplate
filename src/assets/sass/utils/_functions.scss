@@ -13,3 +13,9 @@
 
   @error "'#{$key}' is not in the map: #{$map}.";
 }
+
+@function color($color, $shade: base) {
+  // Make sure the parameter is a string and not a color.
+  $color: '#{$color}';
+  @return map-get-strict(map-get-strict($colors, $color), $shade);
+}

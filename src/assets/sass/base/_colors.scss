@@ -1,0 +1,48 @@
+$headline: #094067;
+$secondary: #90b4ce;
+$highlight: #3da9fc;
+$danger: #ef4565;
+$grey: #5f6c7b;
+$black: #181a1d;
+$background: #d8eefe;
+
+$lighten: 5;
+$darken: 25;
+
+$colors: (
+  'headline': (
+    base: $headline,
+    light: lighten($headline, $lighten),
+    dark: darken($headline, $darken),
+  ),
+  'secondary': (
+    base: $secondary,
+    light: lighten($secondary, $lighten),
+    dark: darken($secondary, $darken),
+  ),
+  'highlight': (
+    base: $highlight,
+    light: lighten($highlight, $lighten),
+    dark: darken($highlight, $darken),
+  ),
+  'danger': (
+    base: $danger,
+    light: lighten($danger, $lighten),
+    dark: darken($danger, $darken),
+  ),
+  'grey': (
+    base: $grey,
+    light: lighten($grey, $lighten),
+    dark: darken($grey, $darken),
+  ),
+  'background': (
+    base: $background,
+    light: lighten($background, $lighten),
+    dark: darken($background, $darken),
+  ),
+  'neutral': (
+    base: #5f6c7b,
+    light: #b2cad8,
+    dark: $black,
+  ),
+);
