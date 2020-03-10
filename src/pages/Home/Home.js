@@ -1,6 +1,11 @@
 import React from 'react'
 import { PageTitle } from '../../components'
+import { setPageTitle } from '../../core/setPageTitle'
 
 export default function Home() {
-  return <PageTitle>Home page</PageTitle>
+  React.useEffect(() => {
+    setPageTitle('Home')
+  }, [])
+
+  return <PageTitle>Wellcome to React boilerplate</PageTitle>
 }
