@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "run-p start:*",
+    "start:react-app": "react-scripts start",
+    "start:storybook": "start-storybook -p 9009  -s ./public",
     "format": "prettier --write \"**/*.{js,json,scss,md,yml,html}\"",
     "build": "react-scripts build"
   },
@@ -14,7 +16,13 @@
     "react-scripts": "3.4.0"
   },
   "devDependencies": {
+    "@storybook/addon-backgrounds": "^5.3.14",
+    "@storybook/addon-knobs": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/preset-create-react-app": "^1.5.2",
+    "@storybook/react": "^5.3.13",
     "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.19.1"
   },
   "eslintConfig": {

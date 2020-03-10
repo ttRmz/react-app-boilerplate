@@ -1,0 +1,8 @@
+.App {
+  background-color: color(background, light);
+  padding-bottom: $footer_height;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}

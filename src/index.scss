@@ -1,5 +1,9 @@
 // main styles
 @import './assets/sass/main.scss';
+@import './app/App.scss';
+
+//components
+@import './components/index.scss';
 
 //layout
 @import './layout/Footer/Footer.scss';
@@ -8,6 +12,3 @@
 // pages
 @import './pages/Home/Home.scss';
 @import './pages/Dashboard/Dashboard.scss';
-
-//components
-@import './component/index.scss';

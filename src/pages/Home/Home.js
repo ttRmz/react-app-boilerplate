@@ -1,5 +1,5 @@
 import React from 'react'
-import { PageTitle } from '../../component'
+import { PageTitle } from '../../components'
 
 export default function Home() {
   return <PageTitle>Home page</PageTitle>
