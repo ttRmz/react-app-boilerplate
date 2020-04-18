@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { App } from './app'
+import './i18n'
 import './index.scss'
 
 global.APP_VERSION = process.env.REACT_APP_VERSION
