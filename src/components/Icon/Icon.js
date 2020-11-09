@@ -1,6 +1,5 @@
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
 import { ICONS } from './_internals/constants'
 
 export function Icon({ name, className, ...props }) {

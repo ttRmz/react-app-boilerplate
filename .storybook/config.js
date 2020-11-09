@@ -1,7 +1,6 @@
 import { withKnobs } from '@storybook/addon-knobs'
 import { addDecorator, addParameters, configure } from '@storybook/react'
 import { create } from '@storybook/theming'
-import React from 'react'
 import '../src/index.scss'
 
 const CENTER_STYLE = {

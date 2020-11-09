@@ -1,6 +1,5 @@
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import React from 'react'
 import { ASSETS } from './_internals/constants'
 
 export function Asset({ name, className, ...rest }) {
