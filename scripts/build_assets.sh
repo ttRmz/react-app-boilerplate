@@ -7,8 +7,8 @@ export enum ASSET_NAMES {' >$PATH
 
 for asset in $ASSETS
 do
-  echo "\"$asset\" = \"$asset\"," >>$PATH
+  echo "  \"$asset\" = \"$asset\"," >>$PATH
 done
 
-echo '};' >>$PATH
+echo '}' >>$PATH
 

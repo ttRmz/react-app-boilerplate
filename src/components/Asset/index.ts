@@ -1,2 +1,2 @@
-export * from './Asset'
-export * from './Asset.types'
+export * from "./Asset"
+export * from "./Asset.types"

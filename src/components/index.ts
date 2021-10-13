@@ -1,4 +1,3 @@
-export * from './Asset'
-export * from './Icon'
-export * from './PageTitle'
-
+export * from "./Asset"
+export * from "./Icon"
+export * from "./PageTitle"

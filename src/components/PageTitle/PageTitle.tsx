@@ -1,4 +1,4 @@
-export const PageTitle: React.FC<React.ComponentPropsWithoutRef<'h1'>> = ({
+export const PageTitle: React.FC<React.ComponentPropsWithoutRef<"h1">> = ({
   children,
   ...props
 }) => {

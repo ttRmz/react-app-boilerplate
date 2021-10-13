@@ -1,7 +1,8 @@
-import classNames from 'classnames'
-import { ASSET_NAMES } from './Asset.types'
+import classNames from "classnames"
 
-interface IAssetProps extends React.ComponentPropsWithoutRef<'figure'> {
+import { ASSET_NAMES } from "./Asset.types"
+
+interface IAssetProps extends React.ComponentPropsWithoutRef<"figure"> {
   name: ASSET_NAMES
 }
 
@@ -9,7 +10,7 @@ type AssetComponent = React.FC<IAssetProps>
 
 export const Asset: AssetComponent = ({ name, className, ...rest }) => {
   return (
-    <figure className={classNames('Asset', className)} {...rest}>
+    <figure className={classNames("Asset", className)} {...rest}>
       <img
         className="Asset__image"
         src={`${window.location.origin}/assets/symbols/${name}.svg`}

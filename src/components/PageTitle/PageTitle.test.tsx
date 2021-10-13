@@ -1,15 +1,16 @@
-import { fireEvent, render } from '@testing-library/react'
-import { PageTitle } from '.'
+import { fireEvent, render } from "@testing-library/react"
 
-describe('<PageTitle />', () => {
-  it('should render a PageTitle', () => {
+import { PageTitle } from "."
+
+describe("<PageTitle />", () => {
+  it("should render a PageTitle", () => {
     const { container } = render(<PageTitle children="test title" />)
     expect(container.firstChild).toMatchSnapshot()
   })
 
-  it('should pass props on root element', () => {
+  it("should pass props on root element", () => {
     const onClick = jest.fn()
-    const testId = 'title-id'
+    const testId = "title-id"
 
     const { container, getByTestId } = render(
       <PageTitle

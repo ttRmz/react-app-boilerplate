@@ -1,4 +1,4 @@
-name: Build
+name: Lint
 
 on: pull_request
 
@@ -9,8 +9,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install modules
         run: yarn
-      - name: Run build
-        run: yarn build
-        env:
-          SKIP_PREFLIGHT_CHECK: true
-          CI: false
+      - name: Run ESLint
+        run: yarn run lint
+    env:
+      SKIP_PREFLIGHT_CHECK: true

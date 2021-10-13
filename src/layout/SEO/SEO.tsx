@@ -1,5 +1,6 @@
-import { Helmet } from 'react-helmet'
-import { getPageTitle } from '../../core/getPageTitle'
+import { Helmet } from "react-helmet"
+
+import { getPageTitle } from "../../core/getPageTitle"
 
 interface ISEOProps {
   title?: string
