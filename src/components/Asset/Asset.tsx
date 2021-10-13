@@ -1,8 +1,13 @@
 import classNames from 'classnames'
-import PropTypes from 'prop-types'
-import { ASSETS } from './_internals/constants'
+import { ASSET_NAMES } from './Asset.types'
 
-export function Asset({ name, className, ...rest }) {
+interface IAssetProps extends React.ComponentPropsWithoutRef<'figure'> {
+  name: ASSET_NAMES
+}
+
+type AssetComponent = React.FC<IAssetProps>
+
+export const Asset: AssetComponent = ({ name, className, ...rest }) => {
   return (
     <figure className={classNames('Asset', className)} {...rest}>
       <img
@@ -13,9 +18,3 @@ export function Asset({ name, className, ...rest }) {
     </figure>
   )
 }
-
-Asset.propTypes = {
-  name: PropTypes.oneOf(ASSETS),
-}
-
-Asset.NAMES = ASSETS
