@@ -21,7 +21,8 @@
     "build": "run-s build:*",
     "build:assets": "sh scripts/build_assets.sh",
     "build:icons": "gulp --cwd scripts/ && sh scripts/build_icons.sh",
-    "build:react-app": "react-scripts build"
+    "build:react-app": "react-scripts build",
+    "test": "react-scripts test --env=jsdom"
   },
   "dependencies": {
     "@reach/router": "^1.3.4",
