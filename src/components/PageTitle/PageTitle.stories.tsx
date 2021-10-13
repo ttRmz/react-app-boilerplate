@@ -1,6 +1,5 @@
-import React from 'react'
-import { PageTitle } from './PageTitle'
 import { text } from '@storybook/addon-knobs'
+import { PageTitle } from './PageTitle'
 
 export default {
   title: 'Data display/PageTitle',

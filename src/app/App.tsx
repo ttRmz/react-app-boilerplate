@@ -14,10 +14,9 @@ export function App() {
           <Home path="/" />
           <Dashboard path="/dashboard" />
         </Router>
-
-        <Navigation />
-        <Footer />
       </React.Suspense>
+      <Navigation />
+      <Footer />
     </main>
   )
 }
