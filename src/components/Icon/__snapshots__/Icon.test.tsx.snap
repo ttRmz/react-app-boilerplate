@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> should pass props on root element 1`] = `
+<i
+  class="Icon Icon-react test-class"
+  data-testid="icon-id"
+  id="test-id"
+/>
+`;
+
+exports[`<Icon /> should render an icon 1`] = `
+<i
+  class="Icon Icon-react"
+/>
+`;

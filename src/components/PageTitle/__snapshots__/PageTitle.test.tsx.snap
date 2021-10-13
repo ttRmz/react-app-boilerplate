@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PageTitle /> should pass props on root element 1`] = `
+<h1
+  class="test-class"
+  data-testid="title-id"
+  id="test-id"
+>
+  test title
+</h1>
+`;
+
+exports[`<PageTitle /> should render a PageTitle 1`] = `
+<h1
+  class="PageTitle"
+>
+  test title
+</h1>
+`;
