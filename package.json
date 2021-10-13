@@ -17,12 +17,14 @@
     "start": "run-p start:*",
     "start:react-app": "react-scripts start",
     "start:storybook": "start-storybook -p 9009  -s ./public",
-    "format": "prettier --write \"**/*.{js,json,scss,md,yml,html}\"",
     "build": "run-s build:*",
     "build:assets": "sh scripts/build_assets.sh",
     "build:icons": "gulp --cwd scripts/ && sh scripts/build_icons.sh",
     "build:react-app": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet",
+    "lint:fix": "yarn lint --fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@reach/router": "^1.3.4",
@@ -35,6 +37,7 @@
     "@types/react": "^17.0.29",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.3",
+    "eslint-plugin-react": "^7.26.1",
     "i18next": "^19.4.2",
     "i18next-browser-languagedetector": "^4.1.1",
     "i18next-xhr-backend": "^3.2.2",
@@ -53,15 +56,25 @@
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.13",
     "@types/classnames": "^2.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "gulp": "^4.0.2",
     "gulp-iconfont": "^10.0.3",
     "gulp-iconfont-css": "^3.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": ">=10",
     "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^1.19.1"
+    "prettier": "^2.4.1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "*.js": "eslint --cache --fix"
   },
   "browserslist": {
     "production": [

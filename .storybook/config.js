@@ -13,7 +13,7 @@ const CENTER_STYLE = {
 }
 
 addDecorator(withKnobs)
-addDecorator(storyFn => <div style={CENTER_STYLE}>{storyFn()}</div>)
+addDecorator((storyFn) => <div style={CENTER_STYLE}>{storyFn()}</div>)
 
 addParameters({
   options: {

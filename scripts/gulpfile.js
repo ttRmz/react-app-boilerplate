@@ -26,7 +26,7 @@ function icofontCss(cb) {
         formats: ['ttf', 'eot', 'woff', 'svg'],
       }),
     )
-    .on('glyphs', glyphs => {
+    .on('glyphs', (glyphs) => {
       // CSS templating, e.g.
       console.log(glyphs)
     })

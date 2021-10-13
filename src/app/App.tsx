@@ -1,10 +1,11 @@
-import { Router } from '@reach/router'
-import React from 'react'
-import { Footer } from '../layout/Footer'
-import { Navigation } from '../layout/Navigation'
+import { Router } from "@reach/router"
+import React from "react"
 
-const Home = React.lazy(() => import('../pages/Home/Home'))
-const Dashboard = React.lazy(() => import('../pages/Dashboard/Dashboard'))
+import { Footer } from "../layout/Footer"
+import { Navigation } from "../layout/Navigation"
+
+const Home = React.lazy(() => import("../pages/Home/Home"))
+const Dashboard = React.lazy(() => import("../pages/Dashboard/Dashboard"))
 
 export function App() {
   return (

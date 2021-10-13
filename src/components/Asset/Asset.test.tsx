@@ -1,15 +1,16 @@
-import { fireEvent, render } from '@testing-library/react'
-import { Asset, ASSET_NAMES } from '.'
+import { fireEvent, render } from "@testing-library/react"
 
-describe('<Asset />', () => {
-  it('should render an asset', () => {
+import { Asset, ASSET_NAMES } from "."
+
+describe("<Asset />", () => {
+  it("should render an asset", () => {
     const { container } = render(<Asset name={ASSET_NAMES.analysis} />)
     expect(container.firstChild).toMatchSnapshot()
   })
 
-  it('should pass props on root element', () => {
+  it("should pass props on root element", () => {
     const onClick = jest.fn()
-    const testId = 'asset-id'
+    const testId = "asset-id"
 
     const { container, getByTestId } = render(
       <Asset

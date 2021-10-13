@@ -7,8 +7,8 @@ export enum ICON_NAMES {' >$PATH
 
 for icons in $ICONS
 do
-  echo "\"$icons\" = \"$icons\"," >>$PATH
+  echo "  \"$icons\" = \"$icons\"," >>$PATH
 done
 
-echo '};' >>$PATH
+echo '}' >>$PATH
 

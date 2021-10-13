@@ -4,5 +4,3 @@ declare namespace NodeJS {
     APP_NAME?: string
   }
 }
-    
-  
