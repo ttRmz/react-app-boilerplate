@@ -1,17 +1,18 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-app-boilerplate",
   "version": "1.0.0",
   "description": "React boilerplate",
   "author": {
     "name": "Ramirez Tristan",
     "email": "tristan.rami@gmail.com"
   },
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ttRmz/React-Boilerplates"
+    "url": "https://github.com/ttRmz/react-app-boilerplate"
   },
   "bugs": {
-    "url": "https://github.com/ttRmz/React-Boilerplates/issues"
+    "url": "https://github.com/ttRmz/react-app-boilerplate/issues"
   },
   "scripts": {
     "start": "run-p start:*",
