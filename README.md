@@ -83,13 +83,13 @@ This command will udpate `ASSET_NAMES` enum.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/ttrmz/react-utils/issues).
+Feel free to check [issues page](https://github.com/ttrmz/react-app-boilerplate/issues).
 
 ## 🕑 Changelog
 
 The changelog is available [here](./CHANGELOG.md).
 
-You can also check [releases page](https://github.com/ttrmz/react-utils/releases).
+You can also check [releases page](https://github.com/ttrmz/react-app-boilerplate/releases).
 
 ## Show your support
 
@@ -99,6 +99,6 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2020 [Ramirez Tristan](https://github.com/ttrmz).
 
-This project is [MIT](https://github.com/ttrmz/react-utils/blob/master/LICENSE) licensed.
+This project is [MIT](https://github.com/ttrmz/react-app-boilerplate/blob/master/LICENSE) licensed.
 
 [sb]: https://developers.facebook.com/tools/explorer/
