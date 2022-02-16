@@ -1,13 +1,11 @@
+import { Icon, ICON_NAMES } from "../../components"
+
 export function Footer() {
   return (
     <footer className="Footer">
       <span>
-        Made with{" "}
-        <span role="img" aria-label="hearth">
-          💖
-        </span>{" "}
-        by{" "}
-        <a className="Footer__link" href="https://ttrmz.netlify.com/">
+        Made with <Icon name={ICON_NAMES.react} /> by{" "}
+        <a className="Footer__link" href="https://tristan-ramirez.me/">
           Tristan Ramirez
         </a>
       </span>
