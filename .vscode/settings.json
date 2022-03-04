@@ -1,6 +1,11 @@
 {
   "i18n-ally.localesPaths": ["public/locales"],
+
+  // save config
+  "editor.formatOnSave": true,
+  "eslint.codeActionsOnSave.mode": "all",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
   }
 }

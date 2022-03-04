@@ -1,14 +1,34 @@
-import { knobAsset } from "../../../.storybook/knobs"
-import { ASSET_NAMES } from "."
+import { ComponentMeta, ComponentStory } from "@storybook/react"
+
 import { Asset } from "./Asset"
+import { ASSET_NAMES } from "./Asset.types"
 
 export default {
-  title: "Design tokens/Asset",
+  title: "UI/Asset",
   component: Asset,
-}
+  argTypes: {
+    name: { control: { type: "select", options: ASSET_NAMES } },
+  },
+} as ComponentMeta<typeof Asset>
 
-export const Demo = () => {
-  return <Asset name={knobAsset("name", ASSET_NAMES.analysis)} />
+const Template: ComponentStory<typeof Asset> = ({ name }) => (
+  <div
+    style={{
+      display: "inline-flex",
+      flexDirection: "column",
+      alignItems: "center",
+    }}
+  >
+    <Asset style={{ fontSize: "48px", marginBottom: "12px" }} name={name} />
+
+    <span>{name}</span>
+  </div>
+)
+
+export const Demo = Template.bind({})
+
+Demo.args = {
+  name: ASSET_NAMES.analysis,
 }
 
 export const List = () => {
@@ -24,17 +44,18 @@ export const List = () => {
         <div
           key={name}
           style={{
+            width: "4em",
+            margin: 12,
+            fontSize: 36,
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            margin: 12,
           }}
         >
-          <Asset style={{ width: 64, height: 64 }} name={name} />
-
+          <Asset name={name} />
           <span
             style={{
               fontSize: 12,
+              textAlign: "center",
               marginTop: 14,
             }}
           >
