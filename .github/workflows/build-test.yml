@@ -1,0 +1,37 @@
+name: build-test
+
+on:
+  pull_request:
+    paths-ignore:
+      - "**.md"
+  push:
+    branches:
+      - main
+      - master
+      - releases/*
+    paths-ignore:
+      - "**.md"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Build react app
+        run: yarn run build:react-app
+        env:
+          SKIP_PREFLIGHT_CHECK: true
+          CI: false
+      - name: Build storybook
+        run: yarn run build:storybook
+        env:
+          SKIP_PREFLIGHT_CHECK: true
+          CI: false
+      - name: Run ESLint
+        run: yarn run lint
+      - name: Run tests
+        run: yarn run test
+        env:
+          SKIP_PREFLIGHT_CHECK: true
