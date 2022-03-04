@@ -10,37 +10,37 @@ $lighten: 5;
 $darken: 25;
 
 $colors: (
-  'headline': (
+  "headline": (
     base: $headline,
     light: lighten($headline, $lighten),
     dark: darken($headline, $darken),
   ),
-  'secondary': (
+  "secondary": (
     base: $secondary,
     light: lighten($secondary, $lighten),
     dark: darken($secondary, $darken),
   ),
-  'highlight': (
+  "highlight": (
     base: $highlight,
     light: lighten($highlight, $lighten),
     dark: darken($highlight, $darken),
   ),
-  'danger': (
+  "danger": (
     base: $danger,
     light: lighten($danger, $lighten),
     dark: darken($danger, $darken),
   ),
-  'grey': (
+  "grey": (
     base: $grey,
     light: lighten($grey, $lighten),
     dark: darken($grey, $darken),
   ),
-  'background': (
+  "background": (
     base: $background,
     light: lighten($background, $lighten),
     dark: darken($background, $darken),
   ),
-  'neutral': (
+  "neutral": (
     base: #5f6c7b,
     light: #b2cad8,
     dark: $black,

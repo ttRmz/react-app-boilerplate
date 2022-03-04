@@ -47,6 +47,12 @@ or
 npx majestic
 ```
 
+### Format your code
+
+```sh
+yarn run format
+```
+
 ## ✨ Features
 
 ### Add new `Icons`
