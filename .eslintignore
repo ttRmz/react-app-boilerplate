@@ -2,3 +2,5 @@
 /build
 /coverage
 /scripts
+/storybook-static
+/dist
