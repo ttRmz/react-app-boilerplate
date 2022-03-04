@@ -1,16 +1,18 @@
-import { text } from "@storybook/addon-knobs"
+import { ComponentMeta, ComponentStory } from "@storybook/react"
 
 import { PageTitle } from "./PageTitle"
 
 export default {
-  title: "Data display/PageTitle",
+  title: "UI/PageTitle",
   component: PageTitle,
-}
+} as ComponentMeta<typeof PageTitle>
 
-export const ToStorybook = () => (
-  <PageTitle children={text("children", "PageTitle text")} />
+const Template: ComponentStory<typeof PageTitle> = args => (
+  <PageTitle {...args} />
 )
 
-ToStorybook.story = {
-  name: "PageTitle",
+export const Demo = Template.bind({})
+
+Demo.args = {
+  children: "Hello world",
 }

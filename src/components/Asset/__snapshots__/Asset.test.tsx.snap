@@ -25,3 +25,273 @@ exports[`<Asset /> should render an asset 1`] = `
   />
 </figure>
 `;
+
+exports[`Storyshots UI/Asset Demo 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "inline-flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <figure
+    className="Asset"
+    style={
+      Object {
+        "fontSize": "48px",
+        "marginBottom": "12px",
+      }
+    }
+  >
+    <img
+      alt="analysis"
+      className="Asset__image"
+      src="http://localhost/assets/symbols/analysis.svg"
+    />
+  </figure>
+  <span>
+    analysis
+  </span>
+</div>
+`;
+
+exports[`Storyshots UI/Asset List 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexFlow": "row wrap",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": 36,
+        "margin": 12,
+        "width": "4em",
+      }
+    }
+  >
+    <figure
+      className="Asset"
+    >
+      <img
+        alt="analysis"
+        className="Asset__image"
+        src="http://localhost/assets/symbols/analysis.svg"
+      />
+    </figure>
+    <span
+      style={
+        Object {
+          "fontSize": 12,
+          "marginTop": 14,
+          "textAlign": "center",
+        }
+      }
+    >
+      analysis
+    </span>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": 36,
+        "margin": 12,
+        "width": "4em",
+      }
+    }
+  >
+    <figure
+      className="Asset"
+    >
+      <img
+        alt="analytics"
+        className="Asset__image"
+        src="http://localhost/assets/symbols/analytics.svg"
+      />
+    </figure>
+    <span
+      style={
+        Object {
+          "fontSize": 12,
+          "marginTop": 14,
+          "textAlign": "center",
+        }
+      }
+    >
+      analytics
+    </span>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": 36,
+        "margin": 12,
+        "width": "4em",
+      }
+    }
+  >
+    <figure
+      className="Asset"
+    >
+      <img
+        alt="newspaper"
+        className="Asset__image"
+        src="http://localhost/assets/symbols/newspaper.svg"
+      />
+    </figure>
+    <span
+      style={
+        Object {
+          "fontSize": 12,
+          "marginTop": 14,
+          "textAlign": "center",
+        }
+      }
+    >
+      newspaper
+    </span>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": 36,
+        "margin": 12,
+        "width": "4em",
+      }
+    }
+  >
+    <figure
+      className="Asset"
+    >
+      <img
+        alt="report"
+        className="Asset__image"
+        src="http://localhost/assets/symbols/report.svg"
+      />
+    </figure>
+    <span
+      style={
+        Object {
+          "fontSize": 12,
+          "marginTop": 14,
+          "textAlign": "center",
+        }
+      }
+    >
+      report
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots UI/Icon Demo 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "inline-flex",
+      "flexDirection": "column",
+    }
+  }
+>
+  <i
+    className="Icon Icon-react"
+    style={
+      Object {
+        "fontSize": "48px",
+        "marginBottom": "12px",
+      }
+    }
+  />
+  <span>
+    react
+  </span>
+</div>
+`;
+
+exports[`Storyshots UI/Icon List 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexFlow": "row wrap",
+      "justifyContent": "center",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": 36,
+        "margin": 12,
+        "width": "4em",
+      }
+    }
+  >
+    <i
+      className="Icon Icon-heart"
+    />
+    <span
+      style={
+        Object {
+          "fontSize": 12,
+          "marginTop": 14,
+          "textAlign": "center",
+        }
+      }
+    >
+      heart
+    </span>
+  </div>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "fontSize": 36,
+        "margin": 12,
+        "width": "4em",
+      }
+    }
+  >
+    <i
+      className="Icon Icon-react"
+    />
+    <span
+      style={
+        Object {
+          "fontSize": 12,
+          "marginTop": 14,
+          "textAlign": "center",
+        }
+      }
+    >
+      react
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots UI/PageTitle Demo 1`] = `
+<h1
+  className="PageTitle"
+>
+  Hello world
+</h1>
+`;

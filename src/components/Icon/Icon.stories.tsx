@@ -1,16 +1,34 @@
-import { knobIcon } from "../../../.storybook/knobs"
+import { ComponentMeta, ComponentStory } from "@storybook/react"
+
 import { Icon } from "./Icon"
 import { ICON_NAMES } from "./Icon.types"
 
 export default {
-  title: "Design tokens/Icon",
+  title: "UI/Icon",
   component: Icon,
-}
+  argTypes: {
+    name: { control: { type: "select", options: ICON_NAMES } },
+  },
+} as ComponentMeta<typeof Icon>
 
-export const Demo = () => {
-  return (
-    <Icon style={{ fontSize: 48 }} name={knobIcon("name", ICON_NAMES.react)} />
-  )
+const Template: ComponentStory<typeof Icon> = ({ name }) => (
+  <div
+    style={{
+      display: "inline-flex",
+      flexDirection: "column",
+      alignItems: "center",
+    }}
+  >
+    <Icon style={{ fontSize: "48px", marginBottom: "12px" }} name={name} />
+
+    <span>{name}</span>
+  </div>
+)
+
+export const Demo = Template.bind({})
+
+Demo.args = {
+  name: ICON_NAMES.react,
 }
 
 export const List = () => {
