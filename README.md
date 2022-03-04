@@ -47,12 +47,6 @@ or
 npx majestic
 ```
 
-### Format your code
-
-```sh
-yarn lint:fix
-```
-
 ## ✨ Features
 
 ### Add new `Icons`
